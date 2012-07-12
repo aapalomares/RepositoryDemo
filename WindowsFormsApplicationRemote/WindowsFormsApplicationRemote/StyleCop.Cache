@@ -232,9 +232,6 @@
       </violation>
     </violations>
   </sourcecode>
-  <project key="-1017163891">
-    <configuration>DEBUG;TRACE</configuration>
-  </project>
   <sourcecode name="WindowsTest.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
       <timestamp>03/21/2012 12:05:02</timestamp>
@@ -340,4 +337,7 @@
       </violation>
     </violations>
   </sourcecode>
+  <project key="-1017163891">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>
