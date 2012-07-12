@@ -27,4 +27,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NDepend) = preSolution
+		Project = "..\..\..\..\Users\anpl\AppData\Local\Temp\NDependTemporaryProject\NDependProject.ndproj"
+	EndGlobalSection
 EndGlobal
