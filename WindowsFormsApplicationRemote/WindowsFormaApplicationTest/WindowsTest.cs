@@ -17,17 +17,17 @@ namespace WindowsFormsApplicationRemote
             Trace.TraceInformation("Test trace.");
         }
 
-        [Test]
-        public void TestException()
-        {
-            throw new Exception("Test Exception");
-        }
+        //[Test]
+        //public void TestException()
+        //{
+        //    throw new Exception("Test Exception");
+        //}
 
-        [Test]
-        public void TestAssert()
-        {
-            Assert.Fail("Test Assert");
-        }
+        //[Test]
+        //public void TestAssert()
+        //{
+        //    Assert.Fail("Test Assert");
+        //}
 
         [Test]
         public void TestHang()
