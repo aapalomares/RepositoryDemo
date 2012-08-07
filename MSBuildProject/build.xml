@@ -264,7 +264,7 @@
   <Target Name="SimianTest">
     <Message Text="*** SimianTest beginning..." />
 
-    <Exec IgnoreExitCode="true" Command="&quot;$(SimianExe)&quot; **/*.cs -formatter=xml:$(SimianOutputFile) -language=cs -excludes=&quot;$(SimianExcludesFiles)&quot; -failOnDuplication-"  />
+    <Exec IgnoreExitCode="true" Command="&quot;$(SimianExe)&quot; **/*.cs -formatter=xml:"$(SimianOutputFile)" -language=cs -excludes=&quot;$(SimianExcludesFiles)&quot; -failOnDuplication-"  />
 
     <Message Text="*** SimianTest end." />
   </Target>
