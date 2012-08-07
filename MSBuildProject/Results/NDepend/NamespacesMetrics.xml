@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NamespacesMetrics>
+  <Namespace Namespace="MSBuildProjectClass" NTypes="1" NILInstruction="9" NbLinesOfCode="2" NbLinesOfComment="0" PercentageComment="0" PercentageCoverage="-" AfferentCoupling="0" EfferentCoupling="1" />
+  <Namespace Namespace="MSBuildProjectWeb" NTypes="4" NILInstruction="43" NbLinesOfCode="2" NbLinesOfComment="50" PercentageComment="96" PercentageCoverage="-" AfferentCoupling="0" EfferentCoupling="7" />
+  <Namespace Namespace="MSBuildProjectWeb.Account" NTypes="4" NILInstruction="69" NbLinesOfCode="7" NbLinesOfComment="36" PercentageComment="83" PercentageCoverage="-" AfferentCoupling="0" EfferentCoupling="6" />
+  <Namespace Namespace="MSBuildProjectTest" NTypes="1" NILInstruction="13" NbLinesOfCode="2" NbLinesOfComment="10" PercentageComment="83" PercentageCoverage="-" AfferentCoupling="0" EfferentCoupling="4" />
+</NamespacesMetrics>

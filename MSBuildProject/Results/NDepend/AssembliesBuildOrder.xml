@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AssemblySortForCompilOrObfusk>
+  <Assembly Assembly="MSBuildProjectClass">6</Assembly>
+  <Assembly Assembly="MSBuildProjectWeb">7</Assembly>
+  <Assembly Assembly="MSBuildProjectTest">8</Assembly>
+</AssemblySortForCompilOrObfusk>

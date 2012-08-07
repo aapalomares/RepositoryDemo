@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- saved from NCover 3.0 Export url='http://www.ncover.com/' -->
+<coverage profilerVersion="3.4.18.6937" driverVersion="3.4.18.6937" exportversion="3" viewdisplayname="" startTime="2012-07-19T12:31:54.602143Z" measureTime="2012-07-19T12:31:57.5037481Z" projectName="New Project" buildid="0fe98514-1625-4bb1-9b09-67158862d125" coveragenodeid="0" failed="false" satisfactorybranchthreshold="95" satisfactorycoveragethreshold="95" satisfactorycyclomaticcomplexitythreshold="20" satisfactoryfunctionthreshold="80" satisfactoryunvisitedsequencepoints="10" uiviewtype="TreeView" viewguid="New Project" viewfilterstyle="None" viewreportstyle="SequencePointCoveragePercentage" viewsortstyle="Name">
+  <rebasedpaths />
+  <filters />
+  <documents>
+    <doc id="1" excluded="false" url="c:\Varios\Desarrollo\MSBuildProject\MSBuildProjectClass\Class1.cs" cs="DB4A64E2ADFCA23F2C81A1E85C659EAB" csa="406ea660-64cf-4c82-b6f0-42d48172a799" om="17" nid="0" />
+    <doc id="0" excluded="false" url="None" cs="" csa="00000000-0000-0000-0000-000000000000" om="0" nid="0" />
+  </documents>
+  <module moduleId="17" name="C:\Varios\Desarrollo\MSBuildProject\MSBuildProjectClass\bin\Debug\MSBuildProjectClass.dll" assembly="MSBuildProjectClass" assemblyIdentity="MSBuildProjectClass, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL" nid="0">
+    <class name="MSBuildProjectClass.Class1" signature="MSBuildProjectClass.Class1" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor(System.String val) : void" excluded="false" instrumented="false" cc="0" vc="0" nid="0">
+        <seqpnt vc="0" o="0" l="13" el="13" c="9" ec="34" ex="false" fl="65536" doc="1" nid="0" />
+        <seqpnt vc="0" o="8" l="15" el="15" c="13" ec="28" ex="false" fl="65536" doc="1" nid="0" />
+        <seqpnt vc="0" o="F" l="16" el="16" c="9" ec="10" ex="false" fl="65536" doc="1" nid="0" />
+      </method>
+    </class>
+  </module>
+  <module moduleId="14" name="C:\Program Files (x86)\NUnit 2.6\bin\pnunit.framework.dll" assembly="pnunit.framework" assemblyIdentity="pnunit.framework, Version=1.0.4433.35729, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL" nid="0">
+    <class name="PNUnit.Framework.Names" signature="PNUnit.Framework.Names" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Framework.PNUnitRetryException" signature="PNUnit.Framework.PNUnitRetryException" excluded="false" nid="0">
+      <method name=".cctor" signature=".cctor() : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(System.Runtime.Serialization.SerializationInfo info,System.Runtime.Serialization.StreamingContext context) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(System.String message) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(System.String message,System.Exception innerException) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Framework.PNUnitServices" signature="PNUnit.Framework.PNUnitServices" excluded="false" nid="0">
+      <method name=".cctor" signature=".cctor() : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(System.Object info,System.Object consoleaccess) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="CheckInfo" signature="CheckInfo() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="EnterBarrier" signature="EnterBarrier(System.String barrier) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Get" signature="Get() : PNUnit.Framework.PNUnitServices [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestEndBarrier" signature="GetTestEndBarrier() : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestName" signature="GetTestName() : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestParams" signature="GetTestParams() : System.String[]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestStartBarrier" signature="GetTestStartBarrier() : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestWaitBarriers" signature="GetTestWaitBarriers() : System.String[]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetUserValue" signature="GetUserValue(System.String key) : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="InitBarrier" signature="InitBarrier(System.String name,System.Int32 max) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="InitBarriers" signature="InitBarriers() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="IReceiveMessage" signature="IReceiveMessage(System.String tag) : System.Object" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ISendMessage" signature="ISendMessage(System.String tag,System.Int32 receivers,System.Object message) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ReceiveMessage" signature="ReceiveMessage(System.String tag) : System.Object" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="SendMessage" signature="SendMessage(System.String tag,System.Int32 receivers,System.Object message) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Write" signature="Write(System.Char[] buf) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Write" signature="Write(System.Char[] buf,System.Int32 index,System.Int32 count) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="WriteLine" signature="WriteLine(System.String s) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Framework.PNUnitTestInfo" signature="PNUnit.Framework.PNUnitTestInfo" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor(System.String TestName,System.String AssemblyName,System.String TestToRun,System.String[] TestParams,PNUnit.Framework.IPNUnitServices Services) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(System.String TestName,System.String AssemblyName,System.String TestToRun,System.String[] TestParams,PNUnit.Framework.IPNUnitServices Services,System.String StartBarrier,System.String EndBarrier,System.String[] WaitBarriers) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Framework.PNUnitTestResult" signature="PNUnit.Framework.PNUnitTestResult" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor(NUnit.Core.TestName testName,System.String output) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(NUnit.Core.TestResult testResult,System.String output) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="get_Output" signature="get_Output() : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="get_RetryTest" signature="get_RetryTest() : System.Boolean" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+  </module>
+  <module moduleId="15" name="C:\Program Files (x86)\NUnit 2.6\bin\pnunit-agent.exe" assembly="pnunit-agent" assemblyIdentity="pnunit-agent, Version=1.0.4433.35729, Culture=neutral, PublicKeyToken=null, processorArchitecture=MSIL" nid="0">
+    <class name="PNUnit.Agent.Agent" signature="PNUnit.Agent.Agent" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ConfigureLogging" signature="ConfigureLogging() : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Main" signature="Main(System.String[] args) : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ReadArg" signature="ReadArg(System.String[] args) : System.String [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ReadFlag" signature="ReadFlag(System.String[] args,System.String flag) : System.Boolean [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.AgentConfig" signature="PNUnit.Agent.AgentConfig" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.AgentConfigLoader" signature="PNUnit.Agent.AgentConfigLoader" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="LoadFromFile" signature="LoadFromFile(System.String file) : PNUnit.Agent.AgentConfig [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.PNUnitAgent" signature="PNUnit.Agent.PNUnitAgent" excluded="false" nid="0">
+      <method name=".cctor" signature=".cctor() : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ConfigureRemoting" signature="ConfigureRemoting(System.Int32 port) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="FreeMemory" signature="FreeMemory() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="InitializeLifetimeService" signature="InitializeLifetimeService() : System.Object" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Run" signature="Run(PNUnit.Agent.AgentConfig config,System.Boolean bDaemonMode) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunTest" signature="RunTest(PNUnit.Framework.PNUnitTestInfo info) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.PNUnitTestRunner" signature="PNUnit.Agent.PNUnitTestRunner" excluded="false" nid="0">
+      <method name=".cctor" signature=".cctor() : void [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name=".ctor" signature=".ctor(PNUnit.Framework.PNUnitTestInfo info,PNUnit.Agent.AgentConfig config) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="BuildError" signature="BuildError(System.Exception e,PNUnit.Agent.TestConsoleAccess consoleAccess) : NUnit.Core.TestResult" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="BuildError" signature="BuildError(System.String message,PNUnit.Agent.TestConsoleAccess consoleAccess) : NUnit.Core.TestResult" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="BuildResult" signature="BuildResult(NUnit.Core.TestResult result,PNUnit.Agent.TestConsoleAccess consoleAccess,PNUnit.Framework.PNUnitTestInfo testInfo) : NUnit.Core.TestResult" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="CreatePNUnitServices" signature="CreatePNUnitServices(NUnit.Util.TestDomain testDomain,PNUnit.Agent.TestConsoleAccess consoleAccess) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="FindResult" signature="FindResult(System.String name,NUnit.Core.TestResult result) : NUnit.Core.TestResult [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetShadowCopyCacheConfig" signature="GetShadowCopyCacheConfig() : System.Boolean" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="IsWindows" signature="IsWindows() : System.Boolean [static]" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="MakeTest" signature="MakeTest(NUnit.Core.TestRunner runner,System.String assemblyName,System.Boolean bShadowCopyCache) : System.Boolean" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ReleaseDomain" signature="ReleaseDomain(NUnit.Util.TestDomain testDomain) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ReturnTestOutput" signature="ReturnTestOutput() : System.Boolean" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Run" signature="Run() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunTest" signature="RunTest(NUnit.Util.ConsoleWriter outStream,NUnit.Util.TestDomain testDomain) : NUnit.Core.TestResult" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="SetupTest" signature="SetupTest(PNUnit.Agent.TestConsoleAccess consoleAccess) : NUnit.Util.TestDomain" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="ThreadProc" signature="ThreadProc() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.PNUnitTestRunner+EventCollector" signature="PNUnit.Agent.PNUnitTestRunner+EventCollector" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor(NUnit.Util.ConsoleWriter writer) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunFinished" signature="RunFinished(NUnit.Core.TestResult result) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunFinished" signature="RunFinished(NUnit.Core.TestResult[] results) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunFinished" signature="RunFinished(System.Exception exception) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunStarted" signature="RunStarted(NUnit.Core.Test[] tests) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="RunStarted" signature="RunStarted(System.String a,System.Int32 b) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="SuiteFinished" signature="SuiteFinished(NUnit.Core.TestResult suiteResult) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="SuiteStarted" signature="SuiteStarted(NUnit.Core.TestName name) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="TestFinished" signature="TestFinished(NUnit.Core.TestResult testResult) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="TestOutput" signature="TestOutput(NUnit.Core.TestOutput output) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="TestStarted" signature="TestStarted(NUnit.Core.TestMethod testCase) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="TestStarted" signature="TestStarted(NUnit.Core.TestName testName) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="UnhandledException" signature="UnhandledException(System.Exception exception) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+    <class name="PNUnit.Agent.TestConsoleAccess" signature="PNUnit.Agent.TestConsoleAccess" excluded="false" nid="0">
+      <method name=".ctor" signature=".ctor() : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="GetTestOutput" signature="GetTestOutput() : System.String" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="InitializeLifetimeService" signature="InitializeLifetimeService() : System.Object" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Write" signature="Write(System.Char[] buf) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="Write" signature="Write(System.Char[] buf,System.Int32 index,System.Int32 count) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+      <method name="WriteLine" signature="WriteLine(System.String s) : void" excluded="false" instrumented="false" cc="1" vc="0" nid="0" />
+    </class>
+  </module>
+</coverage>

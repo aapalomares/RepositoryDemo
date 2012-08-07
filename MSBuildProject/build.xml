@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project
+  xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+  ToolsVersion="3.5"
+  DefaultTargets="BuildAll">
+
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets"/>
+
+  <!-- 
+    Set Default Values. 
+    
+    These properties can be overridden from msbuild command line.
+    i.e. msbuild /p:ProjectRoot=c:\someproj\app\ build.demo.xml
+    -->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectRoot Condition=" '$(ProjectRoot)' == '' ">$(MSBuildProjectDirectory)</ProjectRoot>
+    <DirectoryResult>Results</DirectoryResult>
+
+    <!-- NUnit Configuration. -->
+    <NUnitRoot>$(ProgramFiles)\NUnit 2.6\bin</NUnitRoot>
+    <NUnitOutputXMLFile>$(ProjectRoot)\$(DirectoryResult)\nunit-result.xml</NUnitOutputXMLFile>
+    <NUNitContinueOnError>true</NUNitContinueOnError>
+    <NUnitDisableShadowCopy>true</NUnitDisableShadowCopy>
+    <NUnitClassLibraryOutputDirectory>$(ProjectRoot)\*\bin\$(Configuration)\*Test*.dll</NUnitClassLibraryOutputDirectory>
+    
+    <!-- StyleCop Configuration. -->
+    <StyleCopRoot>$(ProgramFiles)\StyleCop 4.7</StyleCopRoot>
+    <StyleCopSettingsEditorExe>"$(StyleCopRoot)\StyleCopSettingsEditor.exe"</StyleCopSettingsEditorExe>
+    <StyleCopSettingsFile>"$(ProjectRoot)\Settings.StyleCop"</StyleCopSettingsFile>
+    <StyleCopForceFullAnalysis Condition="'$(StyleCopForceFullAnalysis)' == ''">true</StyleCopForceFullAnalysis>
+    <StyleCopCacheResults Condition="'$(StyleCopCacheResults)' == ''">false</StyleCopCacheResults>
+    <StyleCopTreatErrorsAsWarnings Condition="'$(StyleCopTreatErrorsAsWarnings)' == ''">false</StyleCopTreatErrorsAsWarnings>
+    <StyleCopEnabled Condition="'$(StyleCopEnabled)' == ''">true</StyleCopEnabled>
+    <StyleCopOverrideSettingsFile Condition="'$(StyleCopOverrideSettingsFile)' == ''">$(StyleCopSettingsFile)</StyleCopOverrideSettingsFile>
+    <StyleCopContinueOnError Condition="'$(StyleCopContinueOnError)' == ''">true</StyleCopContinueOnError>
+    <StyleCopOutputFile Condition="'$(StyleCopOutputFile)' == ''">$(ProjectRoot)\$(DirectoryResult)\StyleCopViolations.xml</StyleCopOutputFile>
+
+    <!-- FxCop Configuration. -->
+    <FXCopToolPath>$(ProgramFiles)\Microsoft Fxcop 10.0</FXCopToolPath>
+    <FXCopToolProjectFile>Project.FxCop</FXCopToolProjectFile>
+    <FXCopToolOutputFile>$(ProjectRoot)\$(DirectoryResult)\FxCopReport.xml</FXCopToolOutputFile>
+    <FXCopToolContinueOnError>true</FXCopToolContinueOnError>
+
+    <!-- Simian Configuration. -->
+    <SimianRoot>$(ProgramFiles)\simian-2.3.33\bin</SimianRoot>
+    <SimianExe>$(SimianRoot)\simian-2.3.33.exe</SimianExe>
+    <SimianOutputFile>$(ProjectRoot)\$(DirectoryResult)\simian-results.xml</SimianOutputFile>
+    <SimianExcludesFiles>$(ProjectRoot)\**\*.Designer.cs $(ProjectRoot)\**\*Test*.cs $(ProjectRoot)\**\*Reference*.cs</SimianExcludesFiles>
+
+    <!-- NDepend Configuration -->
+    <NDependPath>$(ProgramFiles)\NDepend 4.0.2.6750\NDepend.console.exe</NDependPath>
+    <NDependProject>$(ProjectRoot)\Project.ndproj</NDependProject>
+    <NDependOutputDirectory>$(ProjectRoot)\$(DirectoryResult)\NDepend</NDependOutputDirectory>
+    <NDependIn>$(ProjectRoot)\*\bin\$(Configuration)\*.dll</NDependIn>
+
+    <!-- NCover Configuration -->
+    <NCoverRoot>C:\Program Files\NCover\</NCoverRoot>
+    <NCoverOutputFile>$(ProjectRoot)\$(DirectoryResult)\ncover-results.xml</NCoverOutputFile>
+
+  </PropertyGroup>
+
+  <!-- Import StyleCop Assembly. -->
+  <UsingTask AssemblyFile="$(ProgramFiles)\StyleCop 4.7\StyleCop.dll" TaskName="StyleCopTask"/>
+
+  <UsingTask
+  TaskName="NCover.MSBuildTasks.NCover"
+  AssemblyFile="C:\Program Files\NCover\Build Task Plugins\NCover.MSBuildTasks.dll" />
+  <UsingTask
+    TaskName="NCover.MSBuildTasks.NCoverReporting"
+    AssemblyFile="C:\Program Files\NCover\Build Task Plugins\NCover.MSBuildTasks.dll" />
+
+
+  <!-- Define Projects Here. -->
+  <ItemGroup>
+    <Project Include="$(ProjectRoot)\**\*.csproj" />
+  </ItemGroup>
+
+  <!--  =======================================
+        All Tasks:
+			- CreateDirectoryResults.
+			- BuildAll
+			- Build.
+			- CleanAll.
+			- CleanBin.
+			- CleanAndBuild.
+      - Help.
+			- NUnitTest.
+			- StyleCopTest.
+			- StyleCopEditSetting.
+			- FxCopTest.
+			- SimianTest.
+			- NDependTest.
+      - NCover.
+        =======================================  -->
+
+  <!-- BuildAll Task. -->
+  <Target Name="Help">
+    <Message Text="*** Possible tasks:" />
+    <Message Text="  - CreateDirectoryResults" />
+    <Message Text="  - BuildAll" />
+    <Message Text="  - Build" />
+    <Message Text="  - CleanAll" />
+    <Message Text="  - CleanBin" />
+    <Message Text="  - CleanAndBuild" />
+    <Message Text="  - Help" />
+    <Message Text="  - NUnitTest" />
+    <Message Text="  - StyleCopTest" />
+    <Message Text="  - StyleCopEditSetting" />
+    <Message Text="  - FxCopTest" />
+    <Message Text="  - SimianTest" />
+    <Message Text="  - NDependTest" />
+    <Message Text="  - NCover" />
+  </Target>
+
+  <!-- BuildAll Task. -->
+  <Target Name="BuildAll">
+    <CallTarget Targets="CreateDirectoryResults" />
+    <CallTarget Targets="CleanAll" />
+    <CallTarget Targets="Build" />
+    <CallTarget Targets="NUnitTest" />
+    <CallTarget Targets="StyleCopTest" />
+    <CallTarget Targets="FxCopTest" />
+    <CallTarget Targets="SimianTest" />
+    <CallTarget Targets="NDependTest" />
+  </Target>
+  
+  <!-- CoreBuild Task. -->
+  <Target Name="Build">
+    <Message Text="*** Build beginning..." />
+
+    <MSBuild Projects="@(Project)" ContinueOnError="false" Properties="Configuration=$(Configuration)">
+      <Output ItemName="BuildOutput" TaskParameter="TargetOutputs"/>
+    </MSBuild>
+
+    <Message Text="*** Build end." />
+  </Target>
+
+  <Target Name="CreateDirectoryResults">
+    <Message Text="*** CreateDirectoryResults beginning..." />
+    
+    <MakeDir Directories = "$(ProjectRoot)\$(DirectoryResult)" Condition = "!Exists('$(ProjectRoot)\$(DirectoryResult)')" />
+
+    <Message Text="*** CreateDirectoryResults end." />
+  </Target>
+  
+  <Target Name="CleanAll">
+    <Message Text="*** CleanAll beginning..." />
+    
+    <!-- Execute Clean from Solution Target. -->
+    <CreateItem Include="$(ProjectRoot)\**\*.sln">
+      <Output TaskParameter="Include" ItemName="ProjectSolutions" />
+    </CreateItem>
+
+    <MSBuild
+      Projects="@(ProjectSolutions)"
+      Targets="Clean"
+      Properties="Configuration=Debug"
+      StopOnFirstFailure="false"
+      ContinueOnError="true"
+      Condition=" '@(ProjectSolutions)' != '' "  />
+
+    <MSBuild
+      Projects="@(ProjectSolutions)"
+      Targets="Clean"
+      Properties="Configuration=Release"
+      StopOnFirstFailure="false"
+      ContinueOnError="true"
+      Condition=" '@(ProjectSolutions)' != '' "  />
+
+    <!-- Remove Bin and Obj Directories. -->
+    <CreateItem Include= "$(ProjectRoot)**\*.csproj;">
+      <Output TaskParameter="Include" ItemName="ProjectFiles" />
+    </CreateItem>
+    <CreateItem
+      Include=
+        " %(ProjectFiles.RootDir)%(ProjectFiles.Directory)bin;
+          %(ProjectFiles.RootDir)%(ProjectFiles.Directory)obj;
+        ">
+      <Output TaskParameter="Include" ItemName="UnnecessaryDirectories" />
+    </CreateItem>
+    <RemoveDir Directories="@(UnnecessaryDirectories)" Condition=" Exists('%(UnnecessaryDirectories.Identity)') " />
+
+    <Message Text="*** CleanAll end." />
+  </Target>
+
+  <Target Name="CleanBin">
+    <Message Text="*** CleanBin beginning..." />
+    
+    <ItemGroup>
+      <BinFiles Include="bin\**\*.*" />
+    </ItemGroup>
+    <Delete Files="@(BinFiles)" />
+
+    <Message Text="*** CleanBin end." />
+  </Target>
+
+  <!-- Build Task. -->
+  <Target Name="CleanAndBuild" DependsOnTargets="Clean">
+    <Message Text="*** CleanAndBuild beginning..."/>
+
+    <MSBuild Projects="@(Project)" />
+
+    <Message Text="*** BuildCleanAndBuild end."/>
+  </Target>
+
+  <!-- NUnitTest Task. -->
+  <Target Name="NUnitTest" DependsOnTargets="Build">
+    <Message Text="*** NUnitTest beginning..."/>
+    
+    <CreateItem Include="$(NUnitClassLibraryOutputDirectory)">
+      <Output TaskParameter="Include" ItemName="TestAssembly" />
+    </CreateItem>
+    
+    <NUnit 
+      ToolPath="$(NUnitRoot)" 
+      DisableShadowCopy="$(NUnitDisableShadowCopy)" 
+      Assemblies="@(TestAssembly)" 
+      OutputXmlFile="$(NUnitOutputXMLFile)" 
+      ContinueOnError="$(NUnitContinueOnError)"/>
+
+    <Message Text="*** NUnitTest end."/>
+  </Target>
+  
+  <!-- StyleCopTest Task. -->
+  <Target Name="StyleCopTest">
+    <Message Text="*** StyleCopTest beginning..."/>
+
+    <CreateItem Include="%(Project.RootDir)%(Project.Directory)**\*.cs">
+      <Output TaskParameter="Include" ItemName="StyleCopFiles" />
+    </CreateItem>
+
+    <StyleCopTask
+        ProjectFullPath="$(MSBuildProjectFile)"
+        SourceFiles="@(StyleCopFiles)"
+        ForceFullAnalysis="$(StyleCopForceFullAnalysis)"
+        DefineConstants="$(DefineConstants)"
+        TreatErrorsAsWarnings="$(StyleCopTreatErrorsAsWarnings)"
+        CacheResults="$(StyleCopCacheResults)"
+        OverrideSettingsFile="$(StyleCopOverrideSettingsFile)"
+        ContinueOnError="$(StyleCopContinueOnError)" 
+        OutputFile="$(StyleCopOutputFile)"/>
+    
+    <Message Text="*** StyleCopTest end."/>
+  </Target>
+
+  <!-- FxCopTest Taks. -->
+  <Target Name="FxCopTest">
+    <Message Text="*** FxCopTest beginning..."/>
+
+    <FxCop
+      ToolPath="$(FXCopToolPath)"
+      ProjectFile = "$(FXCopToolProjectFile)"
+      AnalysisReportFileName="$(FXCopToolOutputFile)"
+      ContinueOnError="$(FXCopToolContinueOnError)"
+      DirectOutputToConsole="true"/>
+
+    <Message Text="*** FxCopTest end."/>
+  </Target>  
+
+  <!-- SimianTest Task. -->
+  <Target Name="SimianTest">
+    <Message Text="*** SimianTest beginning..." />
+
+    <Exec IgnoreExitCode="true" Command="&quot;$(SimianExe)&quot; **/*.cs -formatter=xml:$(SimianOutputFile) -language=cs -excludes=&quot;$(SimianExcludesFiles)&quot; -failOnDuplication-"  />
+
+    <Message Text="*** SimianTest end." />
+  </Target>
+
+  <Target Name="NDependTest">
+    <Message Text="*** NDependTest beginning..." />
+
+    <Exec Command='"$(NDependPath)" "$(NDependProject)" /OutDir "$(NDependOutputDirectory)"'/>
+
+    <Message Text="*** NDependTest end." />
+  </Target>
+
+  <Target Name="NCoverTest">
+    <Message Text="*** NCoverTest beginning..." />
+    <Message Text="*** NCoverTest $(NCoverRoot)" />
+
+    <NCover 
+      ToolPath="$(NCoverRoot)"
+      TestRunnerExe="$(NUnitRoot)\nunit-console.exe"
+      TestRunnerArgs="C:\Desarrollo\MSBuildProject\MSBuildProjectClass\bin\Debug\MSBuildProjectClass.dll"
+      CoverageFile="$(NCoverOutputFile)"/>
+
+    <Message Text="*** NCoverTest end." />
+  </Target>
+  
+  <!-- EditStyleCopSetting Task. -->
+  <Target Name="StyleCopEditSetting">
+    <Exec Command="$(StyleCopSettingsEditorExe) $(StyleCopSettingsFile)" />
+  </Target>
+</Project>

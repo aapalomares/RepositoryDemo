@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<AssembliesMetrics>
+  <Assembly Assembly="MSBuildProjectClass v1.0.0.0" NTypes="1" NAbstractTypes="0" NILInstructionInAsm="9" NbLinesOfCodeInAsm="2" NbLinesOfCommentInAsm="17" PercentageCommentInAsm="89" PercentageCoverageInAsm="-" AfferentCoupling="0" EfferentCoupling="3" RelationalCohesion="1" Instability="1" Abstractness="0" DistFrMainSeq="0" NormDistFrMainSeq="0" />
+  <Assembly Assembly="MSBuildProjectWeb v1.0.0.0" NTypes="8" NAbstractTypes="0" NILInstructionInAsm="112" NbLinesOfCodeInAsm="9" NbLinesOfCommentInAsm="158" PercentageCommentInAsm="94" PercentageCoverageInAsm="-" AfferentCoupling="0" EfferentCoupling="23" RelationalCohesion="0.12" Instability="1" Abstractness="0" DistFrMainSeq="0" NormDistFrMainSeq="0" />
+  <Assembly Assembly="MSBuildProjectTest v1.0.0.0" NTypes="1" NAbstractTypes="0" NILInstructionInAsm="13" NbLinesOfCodeInAsm="2" NbLinesOfCommentInAsm="27" PercentageCommentInAsm="93" PercentageCoverageInAsm="-" AfferentCoupling="0" EfferentCoupling="8" RelationalCohesion="1" Instability="1" Abstractness="0" DistFrMainSeq="0" NormDistFrMainSeq="0" />
+</AssembliesMetrics>

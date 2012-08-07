@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<RuleResult NbQueries="128" NbErrors="0" NbWarns="19">
+  <Group Name="Code Quality" FullName="Code Quality" GroupId="GroupOfRules1650634298" NbQueries="13" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="Code Quality Regression" FullName="Code Quality Regression" GroupId="GroupOfRules-294074117" NbQueries="12" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="Object Oriented Design" FullName="Object Oriented Design" GroupId="GroupOfRules-243333263" NbQueries="13" NbErrors="0" NbWarns="4" Status="Warn">
+    <Query Status="Warn" Name="Class with no descendant should be sealed if possible" ContentTruncatedThreshold="100" FullName="Object Oriented Design \ Class with no descendant should be sealed if possible" QueryId="Query1781656879" NbNodeMatched="10" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Class&amp;#0160;with&amp;#0160;no&amp;#0160;descendant&amp;#0160;should&amp;#0160;be&amp;#0160;sealed&amp;#0160;if&amp;#0160;possible&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsSealed&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;!t.IsPublic&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;if&amp;#0160;you&amp;#0160;are&amp;#0160;developping&amp;#0160;a&amp;#0160;framework&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;with&amp;#0160;classes&amp;#0160;that&amp;#0160;are&amp;#0160;intended&amp;#0160;to&amp;#0160;be&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;sub-classed&amp;#0160;by&amp;#0160;your&amp;#0160;clients.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;orderby&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbLinesOfCode&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;descending&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbLinesOfCode&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Register" FullName="MSBuildProjectWeb.Account.Register">
+          <Val>6</Val>
+        </Row>
+        <Row Name="Class1" FullName="MSBuildProjectClass.Class1">
+          <Val>2</Val>
+        </Row>
+        <Row Name="_Default" FullName="MSBuildProjectWeb._Default">
+          <Val>2</Val>
+        </Row>
+        <Row Name="MSBuildTest" FullName="MSBuildProjectTest.MSBuildTest">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Login" FullName="MSBuildProjectWeb.Account.Login">
+          <Val>1</Val>
+        </Row>
+        <Row Name="About" FullName="MSBuildProjectWeb.About">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Global" FullName="MSBuildProjectWeb.Global">
+          <Val>0</Val>
+        </Row>
+        <Row Name="SiteMaster" FullName="MSBuildProjectWeb.SiteMaster">
+          <Val>0</Val>
+        </Row>
+        <Row Name="ChangePassword" FullName="MSBuildProjectWeb.Account.ChangePassword">
+          <Val>0</Val>
+        </Row>
+        <Row Name="ChangePasswordSuccess" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>13</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>1.3</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>6</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>1.7916</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>3.21</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="A stateless class or structure might be turned into a static type" ContentTruncatedThreshold="100" FullName="Object Oriented Design \ A stateless class or structure might be turned into a static type" QueryId="Query4030357939" NbNodeMatched="1" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;A&amp;#0160;stateless&amp;#0160;class&amp;#0160;or&amp;#0160;structure&amp;#0160;might&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;a&amp;#0160;static&amp;#0160;type&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;rule&amp;#0160;indicates&amp;#0160;stateless&amp;#0160;types&amp;#0160;that&amp;#0160;might&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;eventually&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;static&amp;#0160;classes.&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneric&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;InstanceFields&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;match:&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;--&amp;gt;&amp;#0160;types&amp;#0160;that&amp;#0160;implement&amp;#0160;some&amp;#0160;interfaces.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbInterfacesImplemented&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;--&amp;gt;&amp;#0160;or&amp;#0160;classes&amp;#0160;that&amp;#0160;have&amp;#0160;sub-classes&amp;#0160;children.&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;--&amp;gt;&amp;#0160;or&amp;#0160;classes&amp;#0160;that&amp;#0160;have&amp;#0160;a&amp;#0160;base&amp;#0160;class&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;DepthOfDeriveFrom&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Object"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;||&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStructure&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>type</Column>
+      </Columns>
+      <Rows>
+        <Row Name="MSBuildTest" FullName="MSBuildProjectTest.MSBuildTest" />
+        <Row Name="Sum:" FullName="Stat" />
+        <Row Name="Average:" FullName="Stat" />
+        <Row Name="Minimum:" FullName="Stat" />
+        <Row Name="Maximum:" FullName="Stat" />
+        <Row Name="Standard deviation:" FullName="Stat" />
+        <Row Name="Variance:" FullName="Stat" />
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Non-static classes should be instantiated or turned to static" ContentTruncatedThreshold="100" FullName="Object Oriented Design \ Non-static classes should be instantiated or turned to static" QueryId="Query295029024" NbNodeMatched="10" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Non-static&amp;#0160;classes&amp;#0160;should&amp;#0160;be&amp;#0160;instantiated&amp;#0160;or&amp;#0160;turned&amp;#0160;to&amp;#0160;static&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Notice&amp;#0160;that&amp;#0160;classes&amp;#0160;only&amp;#0160;instantiated&amp;#0160;through&amp;#0160;reflection,&amp;#0160;like&amp;#0160;plug-in&amp;#0160;root&amp;#0160;classes&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;are&amp;#0160;matched&amp;#0160;by&amp;#0160;this&amp;#0160;rules.&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//!t.IsPublic&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;&amp;#0160;&amp;#0160;//&amp;#0160;if&amp;#0160;you&amp;#0160;are&amp;#0160;developping&amp;#0160;a&amp;#0160;framework,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;you&amp;#0160;might&amp;#0160;not&amp;#0160;want&amp;#0160;to&amp;#0160;match&amp;#0160;public&amp;#0160;classes&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsAttributeClass&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Attributes&amp;#0160;class&amp;#0160;are&amp;#0160;never&amp;#0160;seen&amp;#0160;as&amp;#0160;instantiated&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;DeriveFrom&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.MarshalByRefObject"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Types&amp;#0160;instantiated&amp;#0160;through&amp;#0160;remoting&amp;#0160;infrstructure&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;find&amp;#0160;the&amp;#0160;first&amp;#0160;constructor&amp;#0160;of&amp;#0160;t&amp;#0160;called&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;ctorCalled&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Constructors&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;FirstOrDefault&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;ctor&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;ctor&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbMethodsCallingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;match&amp;#0160;t&amp;#0160;if&amp;#0160;none&amp;#0160;of&amp;#0160;its&amp;#0160;constructors&amp;#0160;is&amp;#0160;called.&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;ctorCalled&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;null&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Visibility</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Class1" FullName="MSBuildProjectClass.Class1">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="About" FullName="MSBuildProjectWeb.About">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="_Default" FullName="MSBuildProjectWeb._Default">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="Global" FullName="MSBuildProjectWeb.Global">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="SiteMaster" FullName="MSBuildProjectWeb.SiteMaster">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="ChangePassword" FullName="MSBuildProjectWeb.Account.ChangePassword">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="ChangePasswordSuccess" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="Login" FullName="MSBuildProjectWeb.Account.Login">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="Register" FullName="MSBuildProjectWeb.Account.Register">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="MSBuildTest" FullName="MSBuildProjectTest.MSBuildTest">
+          <Val>Public</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Methods should be declared static if possible" ContentTruncatedThreshold="100" FullName="Object Oriented Design \ Methods should be declared static if possible" QueryId="Query2781844242" NbNodeMatched="11" NbNodeTested="47" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;should&amp;#0160;be&amp;#0160;declared&amp;#0160;static&amp;#0160;if&amp;#0160;possible&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;When&amp;#0160;an&amp;#0160;instance&amp;#0160;method&amp;#0160;can&amp;#0160;be&amp;#0160;safely&amp;#0160;declared&amp;#0160;as&amp;#0160;static&amp;#0160;you&amp;#0160;should&amp;#0160;declare&amp;#0160;it&amp;#0160;as&amp;#0160;static.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Since&amp;#0160;it&amp;#0160;doesn't&amp;#0160;use&amp;#0160;any&amp;#0160;instance&amp;#0160;data&amp;#0160;and&amp;#0160;method&amp;#0160;of&amp;#0160;its&amp;#0160;type&amp;#0160;and&amp;#0160;base-types,&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;you&amp;#0160;should&amp;#0160;consider&amp;#0160;if&amp;#0160;such&amp;#0160;a&amp;#0160;method&amp;#0160;could&amp;#0160;be&amp;#0160;moved&amp;#0160;to&amp;#0160;a&amp;#0160;static&amp;#0160;utility&amp;#0160;class&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;or&amp;#0160;if&amp;#0160;it&amp;#0160;is&amp;#0160;strongly&amp;#0160;related&amp;#0160;enough&amp;#0160;to&amp;#0160;its&amp;#0160;current&amp;#0160;declaring&amp;#0160;type&amp;#0160;to&amp;#0160;stay&amp;#0160;in&amp;#0160;it.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Turning&amp;#0160;an&amp;#0160;instance&amp;#0160;method&amp;#0160;into&amp;#0160;a&amp;#0160;static&amp;#0160;method&amp;#0160;is&amp;#0160;a&amp;#0160;micro&amp;#0160;performance&amp;#0160;optimization&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;since&amp;#0160;a&amp;#0160;static&amp;#0160;method&amp;#0160;is&amp;#0160;a&amp;#0160;bit&amp;#0160;cheaper&amp;#0160;to&amp;#0160;invoke&amp;#0160;than&amp;#0160;an&amp;#0160;instance&amp;#0160;method.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Where&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsInterface&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEnumeration&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsDelegate&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;methodsThatCanBeMadeStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;InstanceMethods&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;An&amp;#0160;instance&amp;#0160;method&amp;#0160;can&amp;#0160;be&amp;#0160;turned&amp;#0160;to&amp;#0160;static&amp;#0160;if&amp;#0160;it&amp;#0160;is&amp;#0160;not&amp;#0160;virtual,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;not&amp;#0160;using&amp;#0160;the&amp;#0160;this&amp;#0160;reference&amp;#0160;and&amp;#0160;also,&amp;#0160;not&amp;#0160;using&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;any&amp;#0160;of&amp;#0160;its&amp;#0160;class&amp;#0160;or&amp;#0160;base&amp;#0160;classes&amp;#0160;instance&amp;#0160;fields&amp;#0160;or&amp;#0160;instance&amp;#0160;methods.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsAbstract&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsVirtual&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AccessThis&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsExplicitInterfaceImpl&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Optimization:&amp;#0160;Using&amp;#0160;FirstOrDefault()&amp;#0160;avoid&amp;#0160;do&amp;#0160;check&amp;#0160;all&amp;#0160;members,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;as&amp;#0160;soon&amp;#0160;as&amp;#0160;one&amp;#0160;member&amp;#0160;is&amp;#0160;found&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;we&amp;#0160;know&amp;#0160;the&amp;#0160;method&amp;#0160;m&amp;#0160;cannot&amp;#0160;be&amp;#0160;made&amp;#0160;static.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MembersUsed&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;FirstOrDefault&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;mUsed&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;mUsed&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;mUsed&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ParentType&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;||&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;DeriveFrom&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;mUsed&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ParentType&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;null&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;methodsThatCanBeMadeStatic&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;staticFieldsUsed&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ParentType&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;StaticFields&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;UsedBy&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Where&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;staticFieldsUsed&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column>staticFieldsUsed</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.About.Page_Load(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Application_Start(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_Start(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Application_End(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_End(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Application_Error(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_Error(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Session_Start(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Session_Start(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Session_End(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Session_End(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.SiteMaster.Page_Load(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.ChangePassword.Page_Load(Object,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess.Page_Load(Object ,EventArgs)">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="TestSuccess()" FullName="MSBuildProjectTest.MSBuildTest.TestSuccess()">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="TestHang()" FullName="MSBuildProjectTest.MSBuildTest.TestHang()">
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Design" FullName="Design" GroupId="GroupOfRules-1945036360" NbQueries="14" NbErrors="0" NbWarns="3" Status="Warn">
+    <Query Status="Warn" Name="Classes that are candidate to be turned into structures" ContentTruncatedThreshold="100" FullName="Design \ Classes that are candidate to be turned into structures" QueryId="Query1642870586" NbNodeMatched="1" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Classes&amp;#0160;that&amp;#0160;are&amp;#0160;candidate&amp;#0160;to&amp;#0160;be&amp;#0160;turned&amp;#0160;into&amp;#0160;structures&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsClass&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;=&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;16&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Structure&amp;#0160;instance&amp;#0160;must&amp;#0160;not&amp;#0160;be&amp;#0160;too&amp;#0160;big,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;else&amp;#0160;it&amp;#0160;degrades&amp;#0160;performance.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbChildren&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Must&amp;#0160;not&amp;#0160;have&amp;#0160;children&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Must&amp;#0160;have&amp;#0160;no&amp;#0160;base&amp;#0160;class&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;DepthOfDeriveFrom&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Object"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;InstanceFields&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Must&amp;#0160;derive&amp;#0160;directly&amp;#0160;from&amp;#0160;System.Object&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;t.IsSealed&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;to&amp;#0160;restreint&amp;#0160;the&amp;#0160;set.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;t.IsImmutable&amp;#0160;&amp;lt;--&amp;#0160;Structures&amp;#0160;should&amp;#0160;be&amp;#0160;immutable&amp;#0160;type.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;t.!IsPublic&amp;#0160;&amp;#0160;&amp;#0160;&amp;lt;--&amp;#0160;You&amp;#0160;might&amp;#0160;want&amp;#0160;to&amp;#0160;add&amp;#0160;this&amp;#0160;condition&amp;#0160;if&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;you&amp;#0160;are&amp;#0160;developping&amp;#0160;a&amp;#0160;framework&amp;#0160;with&amp;#0160;classes&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;that&amp;#0160;are&amp;#0160;intended&amp;#0160;to&amp;#0160;be&amp;#0160;sub-classed&amp;#0160;by&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;your&amp;#0160;clients.&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>type</Column>
+        <Column>Size of instance</Column>
+        <Column>InstanceFields</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Class1" FullName="MSBuildProjectClass.Class1">
+          <Val>4</Val>
+          <Val>1 field</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>4</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid namespaces with few types" ContentTruncatedThreshold="100" FullName="Design \ Avoid namespaces with few types" QueryId="Query4206118250" NbNodeMatched="4" NbNodeTested="21" KindOfNode=" namespaces">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;namespaces&amp;#0160;with&amp;#0160;few&amp;#0160;types&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;n&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Namespaces&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;n&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ChildTypes&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Where&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;5&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;orderby&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;ascending&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;n&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Make&amp;#0160;sure&amp;#0160;that&amp;#0160;there&amp;#0160;is&amp;#0160;a&amp;#0160;logical&amp;#0160;organization&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;to&amp;#0160;each&amp;#0160;of&amp;#0160;your&amp;#0160;namespaces,&amp;#0160;and&amp;#0160;that&amp;#0160;there&amp;#0160;is&amp;#0160;a&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;valid&amp;#0160;reason&amp;#0160;for&amp;#0160;putting&amp;#0160;types&amp;#0160;in&amp;#0160;a&amp;#0160;sparsely&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;populated&amp;#0160;namespace.&amp;#0160;Namespaces&amp;#0160;should&amp;#0160;contain&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;types&amp;#0160;that&amp;#0160;are&amp;#0160;used&amp;#0160;together&amp;#0160;in&amp;#0160;most&amp;#0160;scenarios.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;When&amp;#0160;their&amp;#0160;applications&amp;#0160;are&amp;#0160;mutually&amp;#0160;exclusive,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;types&amp;#0160;should&amp;#0160;be&amp;#0160;located&amp;#0160;in&amp;#0160;separate&amp;#0160;namespaces&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>namespaces</Column>
+        <Column>types</Column>
+      </Columns>
+      <Rows>
+        <Row Name="MSBuildProjectClass" FullName="MSBuildProjectClass">
+          <Val>1 type</Val>
+        </Row>
+        <Row Name="MSBuildProjectTest" FullName="MSBuildProjectTest">
+          <Val>1 type</Val>
+        </Row>
+        <Row Name="MSBuildProjectWeb" FullName="MSBuildProjectWeb">
+          <Val>4 types</Val>
+        </Row>
+        <Row Name="MSBuildProjectWeb.Account" FullName="MSBuildProjectWeb.Account">
+          <Val>4 types</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Instances size shouldn't be too big" ContentTruncatedThreshold="100" FullName="Design \ Instances size shouldn't be too big" QueryId="Query3451708606" NbNodeMatched="7" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Instances&amp;#0160;size&amp;#0160;shouldn't&amp;#0160;be&amp;#0160;too&amp;#0160;big&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;64&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;orderby&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;descending&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;InstanceFields&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Types&amp;#0160;where&amp;#0160;SizeOfInst&amp;#0160;&amp;gt;&amp;#0160;64&amp;#0160;might&amp;#0160;degrade&amp;#0160;performance&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(depending&amp;#0160;on&amp;#0160;the&amp;#0160;number&amp;#0160;of&amp;#0160;instances&amp;#0160;created&amp;#0160;at&amp;#0160;runtime)&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;and&amp;#0160;might&amp;#0160;be&amp;#0160;hard&amp;#0160;to&amp;#0160;maintain.&amp;#0160;However&amp;#0160;it&amp;#0160;is&amp;#0160;not&amp;#0160;a&amp;#0160;rule&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;since&amp;#0160;sometime&amp;#0160;there&amp;#0160;is&amp;#0160;no&amp;#0160;alternative&amp;#0160;(the&amp;#0160;size&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;instances&amp;#0160;of&amp;#0160;the&amp;#0160;System.Net.NetworkInformation.SystemIcmpV6Statistics&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;standard&amp;#0160;class&amp;#0160;is&amp;#0160;2064&amp;#0160;bytes).&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Notice&amp;#0160;that&amp;#0160;a&amp;#0160;class&amp;#0160;with&amp;#0160;a&amp;#0160;large&amp;#0160;SizeOfInst&amp;#0160;value&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;doesn't&amp;#0160;necessarily&amp;#0160;have&amp;#0160;a&amp;#0160;lot&amp;#0160;of&amp;#0160;instance&amp;#0160;fields.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;It&amp;#0160;might&amp;#0160;derive&amp;#0160;from&amp;#0160;a&amp;#0160;class&amp;#0160;with&amp;#0160;a&amp;#0160;large&amp;#0160;SizeOfInst&amp;#0160;value.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;See&amp;#0160;the&amp;#0160;definition&amp;#0160;of&amp;#0160;the&amp;#0160;SizeOfInst&amp;#0160;metric&amp;#0160;here&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.ndepend.com/Metrics.aspx#SizeOfInst" target="_blank"&gt;http://www.ndepend.com/Metrics.aspx#SizeOfInst&lt;/a&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Size of instance</Column>
+        <Column>InstanceFields</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Login" FullName="MSBuildProjectWeb.Account.Login">
+          <Val>366</Val>
+          <Val>2 fields</Val>
+        </Row>
+        <Row Name="Register" FullName="MSBuildProjectWeb.Account.Register">
+          <Val>366</Val>
+          <Val>2 fields</Val>
+        </Row>
+        <Row Name="ChangePassword" FullName="MSBuildProjectWeb.Account.ChangePassword">
+          <Val>362</Val>
+          <Val>1 field</Val>
+        </Row>
+        <Row Name="About" FullName="MSBuildProjectWeb.About">
+          <Val>358</Val>
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="_Default" FullName="MSBuildProjectWeb._Default">
+          <Val>358</Val>
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="ChangePasswordSuccess" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess">
+          <Val>358</Val>
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Global" FullName="MSBuildProjectWeb.Global">
+          <Val>105</Val>
+          <Val>0 field</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>2 273</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>324.71</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>105</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>366</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>89.759</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>8 056</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Architecture and Layering" FullName="Architecture and Layering" GroupId="GroupOfRules-990269139" NbQueries="9" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="API Breaking Changes" FullName="API Breaking Changes" GroupId="GroupOfRules184218658" NbQueries="9" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="Code Diff Summary" FullName="Code Diff Summary" GroupId="GroupOfRules1752346574" NbQueries="25" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="Dead Code" FullName="Dead Code" GroupId="GroupOfRules1664296505" NbQueries="4" NbErrors="0" NbWarns="2" Status="Warn">
+    <Query Status="Warn" Name="Potentially dead Methods" ContentTruncatedThreshold="100" FullName="Dead Code \ Potentially dead Methods" QueryId="Query4205048126" NbNodeMatched="5" NbNodeTested="47" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Potentially&amp;#0160;dead&amp;#0160;Methods&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Filter&amp;#0160;procedure&amp;#0160;for&amp;#0160;methods&amp;#0160;that&amp;#0160;should'nt&amp;#0160;be&amp;#0160;considered&amp;#0160;as&amp;#0160;dead&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;canMethodBeConsideredAsDeadProc&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#2B91BD'&gt;Func&lt;/font&gt;&lt;font color='#000000'&gt;&amp;lt;&lt;/font&gt;&lt;font color='#2B91BD'&gt;IMethod&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;bool&lt;/font&gt;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsPubliclyVisible&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Public&amp;#0160;methods&amp;#0160;might&amp;#0160;be&amp;#0160;used&amp;#0160;by&amp;#0160;client&amp;#0160;applications&amp;#0160;of&amp;#0160;your&amp;#0160;assemblies.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEntryPoint&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Main()&amp;#0160;method&amp;#0160;is&amp;#0160;not&amp;#0160;used&amp;#0160;by-design.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsExplicitInterfaceImpl&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;calls&amp;#0160;explicit&amp;#0160;interface&amp;#0160;methods&amp;#0160;implementation.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsClassConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;calls&amp;#0160;class&amp;#0160;constructors.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsFinalizer&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;calls&amp;#0160;finalizers.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsVirtual&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Only&amp;#0160;check&amp;#0160;for&amp;#0160;non&amp;#0160;virtual&amp;#0160;method&amp;#0160;that&amp;#0160;are&amp;#0160;not&amp;#0160;seen&amp;#0160;as&amp;#0160;used&amp;#0160;in&amp;#0160;IL.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;take&amp;#0160;account&amp;#0160;of&amp;#0160;protected&amp;#0160;ctor&amp;#0160;that&amp;#0160;might&amp;#0160;be&amp;#0160;call&amp;#0160;by&amp;#0160;a&amp;#0160;derived&amp;#0160;ctors.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsProtected&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEventAdder&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;calls&amp;#0160;events&amp;#0160;adder/remover.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEventRemover&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ParentType&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsDelegate&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Methods&amp;#0160;tagged&amp;#0160;with&amp;#0160;these&amp;#0160;two&amp;#0160;attributes&amp;#0160;are&amp;#0160;called&amp;#0160;by&amp;#0160;the&amp;#0160;serialization&amp;#0160;infrastructure.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Runtime.Serialization.OnSerializingAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Runtime.Serialization.OnDeserializedAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;you&amp;#0160;don't&amp;#0160;want&amp;#0160;to&amp;#0160;link&amp;#0160;NDepend.API.dll,&amp;#0160;you&amp;#0160;can&amp;#0160;use&amp;#0160;your&amp;#0160;own&amp;#0160;IsNotDeadCodeAttribute&amp;#0160;and&amp;#0160;adapt&amp;#0160;this&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.IsNotDeadCodeAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Get&amp;#0160;methods&amp;#0160;unused&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;methodsUnused&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbMethodsCallingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;canMethodBeConsideredAsDeadProc&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Dead&amp;#0160;methods&amp;#0160;=&amp;#0160;methods&amp;#0160;used&amp;#0160;only&amp;#0160;by&amp;#0160;unused&amp;#0160;methods&amp;#0160;(recursive)&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;deadMethodsMetric&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;methodsUnused&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;FillIterative&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;methods&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Unique&amp;#0160;loop,&amp;#0160;just&amp;#0160;to&amp;#0160;let&amp;#0160;a&amp;#0160;chance&amp;#0160;to&amp;#0160;build&amp;#0160;the&amp;#0160;hashset.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;o&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;object&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ToEnumerable&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Use&amp;#0160;a&amp;#0160;hashet&amp;#0160;to&amp;#0160;make&amp;#0160;Intersect&amp;#0160;calls&amp;#0160;much&amp;#0160;faster!&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;hashset&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;methods&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;ToHashSet&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;codeBase&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Application&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;UsedByAny&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;methods&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Except&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;methods&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;canMethodBeConsideredAsDeadProc&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Select&amp;#0160;methods&amp;#0160;called&amp;#0160;only&amp;#0160;by&amp;#0160;methods&amp;#0160;already&amp;#0160;considered&amp;#0160;as&amp;#0160;dead&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;hashset&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Intersect&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MethodsCallingMe&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbMethodsCallingMe&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Intersect&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;deadMethodsMetric&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;DefinitionDomain&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MethodsCallingMe&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;depth&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;deadMethodsMetric&lt;/font&gt;&lt;font color='#000000'&gt;[&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;]&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column>MethodsCallingMe</Column>
+        <Column>depth</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Application_Start(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_Start(Object,EventArgs)">
+          <Val>0 method</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Application_End(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_End(Object,EventArgs)">
+          <Val>0 method</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Application_Error(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Application_Error(Object,EventArgs)">
+          <Val>0 method</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Session_Start(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Session_Start(Object,EventArgs)">
+          <Val>0 method</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Session_End(Object,EventArgs)" FullName="MSBuildProjectWeb.Global.Session_End(Object,EventArgs)">
+          <Val>0 method</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Potentially dead Fields" ContentTruncatedThreshold="100" FullName="Dead Code \ Potentially dead Fields" QueryId="Query3796894421" NbNodeMatched="9" NbNodeTested="13" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Potentially&amp;#0160;dead&amp;#0160;Fields&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Fields&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbMethodsUsingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsPublic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Although&amp;#0160;not&amp;#0160;recommended,&amp;#0160;public&amp;#0160;fields&amp;#0160;might&amp;#0160;be&amp;#0160;used&amp;#0160;by&amp;#0160;client&amp;#0160;applications&amp;#0160;of&amp;#0160;your&amp;#0160;assemblies.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;uses&amp;#0160;literal&amp;#0160;fields.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEnumValue&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;uses&amp;#0160;enumeration&amp;#0160;value.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Name&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!=&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"value__"&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;Field&amp;#0160;named&amp;#0160;'value__'&amp;#0160;are&amp;#0160;relative&amp;#0160;to&amp;#0160;enumerations&amp;#0160;and&amp;#0160;the&amp;#0160;IL&amp;#0160;code&amp;#0160;never&amp;#0160;explicitely&amp;#0160;uses&amp;#0160;them.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.IsNotDeadCodeAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;you&amp;#0160;don't&amp;#0160;want&amp;#0160;to&amp;#0160;link&amp;#0160;NDepend.API.dll,&amp;#0160;you&amp;#0160;can&amp;#0160;use&amp;#0160;your&amp;#0160;own&amp;#0160;IsNotDeadCodeAttribute&amp;#0160;and&amp;#0160;adapt&amp;#0160;this&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+      </Columns>
+      <Rows>
+        <Row Name="HeadContent" FullName="MSBuildProjectWeb.SiteMaster.HeadContent" />
+        <Row Name="MasterPageScriptManager" FullName="MSBuildProjectWeb.SiteMaster.MasterPageScriptManager" />
+        <Row Name="HeadLoginView" FullName="MSBuildProjectWeb.SiteMaster.HeadLoginView" />
+        <Row Name="HeadHomeLink" FullName="MSBuildProjectWeb.SiteMaster.HeadHomeLink" />
+        <Row Name="HeadAboutLink" FullName="MSBuildProjectWeb.SiteMaster.HeadAboutLink" />
+        <Row Name="MainContent" FullName="MSBuildProjectWeb.SiteMaster.MainContent" />
+        <Row Name="ChangeUserPassword" FullName="MSBuildProjectWeb.Account.ChangePassword.ChangeUserPassword" />
+        <Row Name="LoginUser" FullName="MSBuildProjectWeb.Account.Login.LoginUser" />
+        <Row Name="RegisterUserWizardStep" FullName="MSBuildProjectWeb.Account.Register.RegisterUserWizardStep" />
+        <Row Name="Sum:" FullName="Stat" />
+        <Row Name="Average:" FullName="Stat" />
+        <Row Name="Minimum:" FullName="Stat" />
+        <Row Name="Maximum:" FullName="Stat" />
+        <Row Name="Standard deviation:" FullName="Stat" />
+        <Row Name="Variance:" FullName="Stat" />
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Visibility" FullName="Visibility" GroupId="GroupOfRules-844618394" NbQueries="8" NbErrors="0" NbWarns="4" Status="Warn">
+    <Query Status="Warn" Name="Methods that could have a lower visibility" ContentTruncatedThreshold="100" FullName="Visibility \ Methods that could have a lower visibility" QueryId="Query1889459446" NbNodeMatched="11" NbNodeTested="47" KindOfNode=" methods">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Methods&amp;#0160;that&amp;#0160;could&amp;#0160;have&amp;#0160;a&amp;#0160;lower&amp;#0160;visibility&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.CannotDecreaseVisibilityAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.IsNotDeadCodeAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;you&amp;#0160;don't&amp;#0160;want&amp;#0160;to&amp;#0160;link&amp;#0160;NDepend.API.dll,&amp;#0160;you&amp;#0160;can&amp;#0160;use&amp;#0160;your&amp;#0160;own&amp;#0160;attributes&amp;#0160;and&amp;#0160;adapt&amp;#0160;this&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Eliminate&amp;#0160;default&amp;#0160;constructor&amp;#0160;from&amp;#0160;the&amp;#0160;result.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Whatever&amp;#0160;the&amp;#0160;visibility&amp;#0160;of&amp;#0160;the&amp;#0160;declaring&amp;#0160;class,&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;default&amp;#0160;constructors&amp;#0160;are&amp;#0160;public&amp;#0160;and&amp;#0160;introduce&amp;#0160;noise&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;in&amp;#0160;the&amp;#0160;current&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsConstructor&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsPublic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbParameters&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;==&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;decrease&amp;#0160;the&amp;#0160;visibility&amp;#0160;of&amp;#0160;Main()&amp;#0160;methods.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEntryPoint&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;CouldBeDeclared&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MethodsCallingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>methods</Column>
+        <Column>Visibility</Column>
+        <Column>CouldBeDeclared</Column>
+        <Column>MethodsCallingMe</Column>
+      </Columns>
+      <Rows>
+        <Row Name=".ctor(String)" FullName="MSBuildProjectClass.Class1..ctor(String)">
+          <Val>Public</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.About.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb._Default.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.SiteMaster.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.ChangePassword.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess.Page_Load(Object ,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.Login.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Page_Load(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.Register.Page_Load(Object,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="RegisterUser_CreatedUser(Object,EventArgs)" FullName="MSBuildProjectWeb.Account.Register.RegisterUser_CreatedUser(Object ,EventArgs)">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="TestSuccess()" FullName="MSBuildProjectTest.MSBuildTest.TestSuccess()">
+          <Val>Public</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="TestHang()" FullName="MSBuildProjectTest.MSBuildTest.TestHang()">
+          <Val>Public</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Types that could have a lower visibility" ContentTruncatedThreshold="100" FullName="Visibility \ Types that could have a lower visibility" QueryId="Query617058051" NbNodeMatched="10" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Types&amp;#0160;that&amp;#0160;could&amp;#0160;have&amp;#0160;a&amp;#0160;lower&amp;#0160;visibility&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.CannotDecreaseVisibilityAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.IsNotDeadCodeAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;you&amp;#0160;don't&amp;#0160;want&amp;#0160;to&amp;#0160;link&amp;#0160;NDepend.API.dll,&amp;#0160;you&amp;#0160;can&amp;#0160;use&amp;#0160;your&amp;#0160;own&amp;#0160;attributes&amp;#0160;and&amp;#0160;adapt&amp;#0160;this&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;CouldBeDeclared&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;TypesUsingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>Visibility</Column>
+        <Column>CouldBeDeclared</Column>
+        <Column>TypesUsingMe</Column>
+      </Columns>
+      <Rows>
+        <Row Name="Class1" FullName="MSBuildProjectClass.Class1">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="About" FullName="MSBuildProjectWeb.About">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="_Default" FullName="MSBuildProjectWeb._Default">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="Global" FullName="MSBuildProjectWeb.Global">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="SiteMaster" FullName="MSBuildProjectWeb.SiteMaster">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="ChangePassword" FullName="MSBuildProjectWeb.Account.ChangePassword">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="ChangePasswordSuccess" FullName="MSBuildProjectWeb.Account.ChangePasswordSuccess">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="Login" FullName="MSBuildProjectWeb.Account.Login">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="Register" FullName="MSBuildProjectWeb.Account.Register">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="MSBuildTest" FullName="MSBuildProjectTest.MSBuildTest">
+          <Val>Public</Val>
+          <Val>Internal</Val>
+          <Val>0 type</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Fields that could have a lower visibility" ContentTruncatedThreshold="100" FullName="Visibility \ Fields that could have a lower visibility" QueryId="Query3726351229" NbNodeMatched="11" NbNodeTested="13" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;that&amp;#0160;could&amp;#0160;have&amp;#0160;a&amp;#0160;lower&amp;#0160;visibility&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Fields&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.CannotDecreaseVisibilityAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"NDepend.Attributes.IsNotDeadCodeAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;you&amp;#0160;don't&amp;#0160;want&amp;#0160;to&amp;#0160;link&amp;#0160;NDepend.API.dll,&amp;#0160;you&amp;#0160;can&amp;#0160;use&amp;#0160;your&amp;#0160;own&amp;#0160;attributes&amp;#0160;and&amp;#0160;adapt&amp;#0160;this&amp;#0160;rule.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Visibility&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;CouldBeDeclared&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;OptimalVisibility&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MethodsUsingMe&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Visibility</Column>
+        <Column>CouldBeDeclared</Column>
+        <Column>MethodsUsingMe</Column>
+      </Columns>
+      <Rows>
+        <Row Name="HeadContent" FullName="MSBuildProjectWeb.SiteMaster.HeadContent">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="MasterPageScriptManager" FullName="MSBuildProjectWeb.SiteMaster.MasterPageScriptManager">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="HeadLoginView" FullName="MSBuildProjectWeb.SiteMaster.HeadLoginView">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="HeadHomeLink" FullName="MSBuildProjectWeb.SiteMaster.HeadHomeLink">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="HeadAboutLink" FullName="MSBuildProjectWeb.SiteMaster.HeadAboutLink">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="MainContent" FullName="MSBuildProjectWeb.SiteMaster.MainContent">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="ChangeUserPassword" FullName="MSBuildProjectWeb.Account.ChangePassword.ChangeUserPassword">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="RegisterHyperLink" FullName="MSBuildProjectWeb.Account.Login.RegisterHyperLink">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>1 method</Val>
+        </Row>
+        <Row Name="LoginUser" FullName="MSBuildProjectWeb.Account.Login.LoginUser">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="RegisterUser" FullName="MSBuildProjectWeb.Account.Register.RegisterUser">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>2 methods</Val>
+        </Row>
+        <Row Name="RegisterUserWizardStep" FullName="MSBuildProjectWeb.Account.Register.RegisterUserWizardStep">
+          <Val>Protected</Val>
+          <Val>Private</Val>
+          <Val>0 method</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+          <Val>0</Val>
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Fields should be declared as private" ContentTruncatedThreshold="100" FullName="Visibility \ Fields should be declared as private" QueryId="Query1467134360" NbNodeMatched="11" NbNodeTested="13" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;should&amp;#0160;be&amp;#0160;declared&amp;#0160;as&amp;#0160;private&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;Application&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Fields&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsPrivate&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;These&amp;#0160;conditions&amp;#0160;filter&amp;#0160;cases&amp;#0160;where&amp;#0160;fields&amp;#0160;&lt;br/&gt;&lt;/font&gt;&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;doesn't&amp;#0160;represent&amp;#0160;state&amp;#0160;that&amp;#0160;should&amp;#0160;be&amp;#0160;encapsulated.&amp;#0160;&lt;br/&gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsInitOnly&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEnumValue&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="HeadContent" FullName="MSBuildProjectWeb.SiteMaster.HeadContent">
+          <Val>4</Val>
+        </Row>
+        <Row Name="MasterPageScriptManager" FullName="MSBuildProjectWeb.SiteMaster.MasterPageScriptManager">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadLoginView" FullName="MSBuildProjectWeb.SiteMaster.HeadLoginView">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadHomeLink" FullName="MSBuildProjectWeb.SiteMaster.HeadHomeLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadAboutLink" FullName="MSBuildProjectWeb.SiteMaster.HeadAboutLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="MainContent" FullName="MSBuildProjectWeb.SiteMaster.MainContent">
+          <Val>4</Val>
+        </Row>
+        <Row Name="ChangeUserPassword" FullName="MSBuildProjectWeb.Account.ChangePassword.ChangeUserPassword">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterHyperLink" FullName="MSBuildProjectWeb.Account.Login.RegisterHyperLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="LoginUser" FullName="MSBuildProjectWeb.Account.Login.LoginUser">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterUser" FullName="MSBuildProjectWeb.Account.Register.RegisterUser">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterUserWizardStep" FullName="MSBuildProjectWeb.Account.Register.RegisterUserWizardStep">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>44</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Purity - Immutability - Side-Effects" FullName="Purity - Immutability - Side-Effects" GroupId="GroupOfRules-1580586165" NbQueries="9" NbErrors="0" NbWarns="1" Status="Warn">
+    <Query Status="Warn" Name="Fields should be marked as ReadOnly when possible" ContentTruncatedThreshold="100" FullName="Purity - Immutability - Side-Effects \ Fields should be marked as ReadOnly when possible" QueryId="Query1120596149" NbNodeMatched="1" NbNodeTested="13" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Fields&amp;#0160;should&amp;#0160;be&amp;#0160;marked&amp;#0160;as&amp;#0160;ReadOnly&amp;#0160;when&amp;#0160;possible&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Fields&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsImmutable&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsInitOnly&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEventDelegateObject&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;A&amp;#0160;field&amp;#0160;that&amp;#0160;matches&amp;#0160;the&amp;#0160;condition&amp;#0160;IsImmutable&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;is&amp;#0160;a&amp;#0160;field&amp;#0160;that&amp;#0160;is&amp;#0160;assigned&amp;#0160;only&amp;#0160;by&amp;#0160;constructors&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;of&amp;#0160;its&amp;#0160;class.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;an&amp;#0160;instance&amp;#0160;field,&amp;#0160;this&amp;#0160;means&amp;#0160;its&amp;#0160;value&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;will&amp;#0160;remain&amp;#0160;constant&amp;#0160;throught&amp;#0160;the&amp;#0160;lifetime&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;of&amp;#0160;the&amp;#0160;object.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;For&amp;#0160;a&amp;#0160;static&amp;#0160;field,&amp;#0160;this&amp;#0160;means&amp;#0160;its&amp;#0160;value&amp;#0160;will&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;remain&amp;#0160;constant&amp;#0160;throught&amp;#0160;the&amp;#0160;lifetime&amp;#0160;of&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;program.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;In&amp;#0160;both&amp;#0160;cases,&amp;#0160;such&amp;#0160;field&amp;#0160;can&amp;#0160;safely&amp;#0160;be&amp;#0160;marked&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;with&amp;#0160;the&amp;#0160;C#&amp;#0160;readonly&amp;#0160;keyword&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(ReadOnly&amp;#0160;in&amp;#0160;VB.NET).&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;condition&amp;#0160;IsInitOnly&amp;#0160;matches&amp;#0160;fields&amp;#0160;that&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;are&amp;#0160;marked&amp;#0160;with&amp;#0160;the&amp;#0160;C#&amp;#0160;readonly&amp;#0160;keyword&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(ReadOnly&amp;#0160;in&amp;#0160;VB.NET).&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>field</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="_someVar" FullName="MSBuildProjectClass.Class1._someVar">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Naming Conventions" FullName="Naming Conventions" GroupId="GroupOfRules1398865418" NbQueries="17" NbErrors="0" NbWarns="3" Status="Warn">
+    <Query Status="Warn" Name="Instance fields should be prefixed with a 'm_'" ContentTruncatedThreshold="100" FullName="Naming Conventions \ Instance fields should be prefixed with a 'm_'" QueryId="Query847309376" NbNodeMatched="12" NbNodeTested="13" KindOfNode=" fields">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Instance&amp;#0160;fields&amp;#0160;should&amp;#0160;be&amp;#0160;prefixed&amp;#0160;with&amp;#0160;a&amp;#0160;'m_'&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;Application&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Fields&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NameLike&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;@"^m_"&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsStatic&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsLiteral&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsEventDelegateObject&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;f&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SizeOfInst&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;naming&amp;#0160;convention&amp;#0160;provokes&amp;#0160;debate.&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Don't&amp;#0160;hesitate&amp;#0160;to&amp;#0160;customize&amp;#0160;the&amp;#0160;regex&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;NameLike&amp;#0160;to&amp;#0160;your&amp;#0160;preference.&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>fields</Column>
+        <Column>Size of instance</Column>
+      </Columns>
+      <Rows>
+        <Row Name="_someVar" FullName="MSBuildProjectClass.Class1._someVar">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadContent" FullName="MSBuildProjectWeb.SiteMaster.HeadContent">
+          <Val>4</Val>
+        </Row>
+        <Row Name="MasterPageScriptManager" FullName="MSBuildProjectWeb.SiteMaster.MasterPageScriptManager">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadLoginView" FullName="MSBuildProjectWeb.SiteMaster.HeadLoginView">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadHomeLink" FullName="MSBuildProjectWeb.SiteMaster.HeadHomeLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="HeadAboutLink" FullName="MSBuildProjectWeb.SiteMaster.HeadAboutLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="MainContent" FullName="MSBuildProjectWeb.SiteMaster.MainContent">
+          <Val>4</Val>
+        </Row>
+        <Row Name="ChangeUserPassword" FullName="MSBuildProjectWeb.Account.ChangePassword.ChangeUserPassword">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterHyperLink" FullName="MSBuildProjectWeb.Account.Login.RegisterHyperLink">
+          <Val>4</Val>
+        </Row>
+        <Row Name="LoginUser" FullName="MSBuildProjectWeb.Account.Login.LoginUser">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterUser" FullName="MSBuildProjectWeb.Account.Register.RegisterUser">
+          <Val>4</Val>
+        </Row>
+        <Row Name="RegisterUserWizardStep" FullName="MSBuildProjectWeb.Account.Register.RegisterUserWizardStep">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>48</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>4</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Types name should begin with an Upper character" ContentTruncatedThreshold="100" FullName="Naming Conventions \ Types name should begin with an Upper character" QueryId="Query3965963567" NbNodeMatched="1" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Types&amp;#0160;name&amp;#0160;should&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;character&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;name&amp;#0160;of&amp;#0160;a&amp;#0160;type&amp;#0160;should&amp;#0160;begin&amp;#0160;with&amp;#0160;an&amp;#0160;Upper&amp;#0160;letter.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SimpleNameLike&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;@"^[A-Z]"&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Except&amp;#0160;if&amp;#0160;it&amp;#0160;is&amp;#0160;generated&amp;#0160;by&amp;#0160;compiler&amp;#0160;or&amp;#0160;...&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsSpecialName&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;amp;&amp;amp;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsGeneratedByCompiler&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;NbLinesOfCode&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>type</Column>
+        <Column># lines of code (LOC)</Column>
+      </Columns>
+      <Rows>
+        <Row Name="_Default" FullName="MSBuildProjectWeb._Default">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>2</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+    <Query Status="Warn" Name="Avoid having different types with same name" ContentTruncatedThreshold="100" FullName="Naming Conventions \ Avoid having different types with same name" QueryId="Query1798806433" NbNodeMatched="2" NbNodeTested="61" KindOfNode=" types">
+      <QueryHtml>&amp;#0160;&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Avoid&amp;#0160;having&amp;#0160;different&amp;#0160;types&amp;#0160;with&amp;#0160;same&amp;#0160;name&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Such&amp;#0160;practice&amp;#0160;typically&amp;#0160;creates&amp;#0160;confusion,&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;and&amp;#0160;type&amp;#0160;naming&amp;#0160;collision&amp;#0160;inside&amp;#0160;a&amp;#0160;source&amp;#0160;file.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;This&amp;#0160;rule&amp;#0160;matches&amp;#0160;also&amp;#0160;collisions&amp;#0160;between&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;application&amp;#0160;and&amp;#0160;third-party&amp;#0160;types&amp;#0160;sharing&amp;#0160;a&amp;#0160;same&amp;#0160;name.&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;groups&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;JustMyCode&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Union&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;ThirdParty&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Types&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Discard&amp;#0160;nested&amp;#0160;types,&amp;#0160;whose&amp;#0160;name&amp;#0160;is&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;prefixed&amp;#0160;with&amp;#0160;the&amp;#0160;parent&amp;#0160;type&amp;#0160;name.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Where&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsNested&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Group&amp;#0160;types&amp;#0160;by&amp;#0160;name.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;GroupBy&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Name&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;@group&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;groups&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;@group&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Let's&amp;#0160;see&amp;#0160;if&amp;#0160;types&amp;#0160;with&amp;#0160;the&amp;#0160;same&amp;#0160;name&amp;#0160;are&amp;#0160;declared&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;in&amp;#0160;different&amp;#0160;namespaces.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;(t.FullName&amp;#0160;is&amp;#0160;{namespaceName}.{typeName}&amp;#0160;)&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;groupsFullName&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;@group&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;GroupBy&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;FullName&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;groupsFullName&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;1&lt;/b&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;If&amp;#0160;several&amp;#0160;types&amp;#0160;with&amp;#0160;same&amp;#0160;name&amp;#0160;are&amp;#0160;declared&amp;#0160;in&amp;#0160;different&amp;#0160;namespaces&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;eliminate&amp;#0160;the&amp;#0160;case&amp;#0160;where&amp;#0160;all&amp;#0160;types&amp;#0160;are&amp;#0160;declared&amp;#0160;in&amp;#0160;third-party&amp;#0160;assemblies.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;groupsFullName&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;SelectMany&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;g&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;g&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Any&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&amp;gt;&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;t&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;IsThirdParty&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Uncomment&amp;#0160;this&amp;#0160;line,&amp;#0160;to&amp;#0160;only&amp;#0160;gets&amp;#0160;naming&amp;#0160;collision&amp;#0160;involving&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;both&amp;#0160;application&amp;#0160;adn&amp;#0160;third-party&amp;#0160;types.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;amp;&amp;amp;&amp;#0160;types.Any(t&amp;#0160;=&amp;gt;&amp;#0160;t.IsThirdParty)&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;orderby&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Count&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;descending&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;t&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;First&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;In&amp;#0160;the&amp;#0160;'types'&amp;#0160;column,&amp;#0160;make&amp;#0160;sure&amp;#0160;to&amp;#0160;group&amp;#0160;matched&amp;#0160;types&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;by&amp;#0160;parent&amp;#0160;assemblies&amp;#0160;and&amp;#0160;parent&amp;#0160;namespaces.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;types&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;}&lt;/font&gt;</QueryHtml>
+      <Columns>
+        <Column>types</Column>
+        <Column>types</Column>
+      </Columns>
+      <Rows>
+        <Row Name="ChangePassword" FullName="MSBuildProjectWeb.Account.ChangePassword">
+          <Val>2 types</Val>
+        </Row>
+        <Row Name="Login" FullName="MSBuildProjectWeb.Account.Login">
+          <Val>2 types</Val>
+        </Row>
+        <Row Name="Sum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Average:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Minimum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Maximum:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Standard deviation:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+        <Row Name="Variance:" FullName="Stat">
+          <Val>0</Val>
+        </Row>
+      </Rows>
+    </Query>
+  </Group>
+  <Group Name="Source Files Organization" FullName="Source Files Organization" GroupId="GroupOfRules-1327291969" NbQueries="6" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name=".NET Framework Usage" FullName=".NET Framework Usage" GroupId="GroupOfRules1219213928" NbQueries="0" NbErrors="0" NbWarns="0" Status="Warn">
+    <Group Name="System" FullName=".NET Framework Usage \ System" GroupId="GroupOfRules-1664150667" NbQueries="13" NbErrors="0" NbWarns="1" Status="Warn">
+      <Query Status="Warn" Name="Mark assemblies with CLSCompliant" ContentTruncatedThreshold="100" FullName=".NET Framework Usage \ System \ Mark assemblies with CLSCompliant" QueryId="Query565816795" NbNodeMatched="3" NbNodeTested="8" KindOfNode=" assemblies">
+        <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Mark&amp;#0160;assemblies&amp;#0160;with&amp;#0160;CLSCompliant&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&amp;#0160;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;a&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;Application&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Assemblies&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;where&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#000000'&gt;!&lt;/font&gt;&lt;font color='#000000'&gt;a&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;HasAttribute&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#A31515'&gt;"System.CLSCompliantAttribute"&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;AllowNoMatch&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;a&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;The&amp;#0160;Common&amp;#0160;Language&amp;#0160;Specification&amp;#0160;(CLS)&amp;#0160;defines&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;naming&amp;#0160;restrictions,&amp;#0160;data&amp;#0160;types,&amp;#0160;and&amp;#0160;rules&amp;#0160;to&amp;#0160;which&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;assemblies&amp;#0160;must&amp;#0160;conform&amp;#0160;if&amp;#0160;they&amp;#0160;are&amp;#0160;to&amp;#0160;be&amp;#0160;used&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;across&amp;#0160;programming&amp;#0160;languages.&amp;#0160;Good&amp;#0160;design&amp;#0160;dictates&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;that&amp;#0160;all&amp;#0160;assemblies&amp;#0160;explicitly&amp;#0160;indicate&amp;#0160;CLS&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;compliance&amp;#0160;with&amp;#0160;CLSCompliantAttribute.&amp;#0160;If&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;attribute&amp;#0160;is&amp;#0160;not&amp;#0160;present&amp;#0160;on&amp;#0160;an&amp;#0160;assembly,&amp;#0160;the&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;assembly&amp;#0160;is&amp;#0160;not&amp;#0160;compliant.&lt;/font&gt;</QueryHtml>
+        <Columns>
+          <Column>assemblies</Column>
+        </Columns>
+        <Rows>
+          <Row Name="MSBuildProjectClass" FullName="MSBuildProjectClass" />
+          <Row Name="MSBuildProjectWeb" FullName="MSBuildProjectWeb" />
+          <Row Name="MSBuildProjectTest" FullName="MSBuildProjectTest" />
+          <Row Name="Sum:" FullName="Stat" />
+          <Row Name="Average:" FullName="Stat" />
+          <Row Name="Minimum:" FullName="Stat" />
+          <Row Name="Maximum:" FullName="Stat" />
+          <Row Name="Standard deviation:" FullName="Stat" />
+          <Row Name="Variance:" FullName="Stat" />
+        </Rows>
+      </Query>
+    </Group>
+    <Group Name="System.Collection" FullName=".NET Framework Usage \ System.Collection" GroupId="GroupOfRules1560634537" NbQueries="1" NbErrors="0" NbWarns="0" Status="Ok" />
+    <Group Name="System.Runtime.InteropServices" FullName=".NET Framework Usage \ System.Runtime.InteropServices" GroupId="GroupOfRules-1971424400" NbQueries="3" NbErrors="0" NbWarns="0" Status="Ok" />
+    <Group Name="System.Threading" FullName=".NET Framework Usage \ System.Threading" GroupId="GroupOfRules-713045791" NbQueries="6" NbErrors="0" NbWarns="1" Status="Warn">
+      <Query Status="Warn" Name="Don't use dangerous threading methods" ContentTruncatedThreshold="100" FullName=".NET Framework Usage \ System.Threading \ Don't use dangerous threading methods" QueryId="Query1898534312" NbNodeMatched="1" NbNodeTested="47" KindOfNode=" methods">
+        <QueryHtml>&lt;font color='#008000'&gt;//&amp;#0160;&amp;lt;Name&amp;gt;&lt;/font&gt;&lt;b style="color:#008000;background-color:#E6FFE6"&gt;Don't&amp;#0160;use&amp;#0160;dangerous&amp;#0160;threading&amp;#0160;methods&lt;/b&gt;&lt;font color='#008000'&gt;&amp;lt;/Name&amp;gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;warnif&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;count&lt;/b&gt;&amp;#0160;&lt;font color='#000000'&gt;&amp;gt;&lt;/font&gt;&amp;#0160;&lt;b style="color:#000000;background-color:#FFFF99"&gt;0&lt;/b&gt;&lt;font color='#000000'&gt;&amp;#0160;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;let&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;wrongMethods&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;ThirdParty&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;WithFullNameIn&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Usage&amp;#0160;of&amp;#0160;Thread.Abort()&amp;#0160;is&amp;#0160;dangerous.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;More&amp;#0160;information&amp;#0160;on&amp;#0160;this&amp;#0160;here:&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://www.interact-sw.co.uk/iangblog/2004/11/12/cancellation" target="_blank"&gt;http://www.interact-sw.co.uk/iangblog/2004/11/12/cancellation&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Threading.Thread.Abort()"&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Threading.Thread.Abort(Object)"&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&amp;#0160;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Usage&amp;#0160;of&amp;#0160;Thread.Sleep()&amp;#0160;is&amp;#0160;a&amp;#0160;sign&amp;#0160;of&amp;#0160;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;flawed&amp;#0160;design.&amp;#0160;More&amp;#0160;information&amp;#0160;on&amp;#0160;this&amp;#0160;here:&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://msmvps.com/blogs/peterritchie/archive/2007/04/26/thread-sleep-is-a-sign-of-a-poorly-designed-program.aspx" target="_blank"&gt;http://msmvps.com/blogs/peterritchie/archive/2007/04/26/thread-sleep-is-a-sign-of-a-poorly-designed-program.aspx&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Threading.Thread.Sleep(Int32)"&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;Suspend()&amp;#0160;and&amp;#0160;Resume()&amp;#0160;are&amp;#0160;dangerous&amp;#0160;threading&amp;#0160;methods,&amp;#0160;marked&amp;#0160;as&amp;#0160;obsolete.&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;More&amp;#0160;information&amp;#0160;on&amp;#0160;workaround&amp;#0160;here:&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;//&amp;#0160;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;a href="http://stackoverflow.com/questions/382173/what-are-alternative-ways-to-suspend-and-resume-a-thread" target="_blank"&gt;http://stackoverflow.com/questions/382173/what-are-alternative-ways-to-suspend-and-resume-a-thread&lt;/a&gt;&lt;/font&gt;&lt;font color='#008000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Threading.Thread.Suspend()"&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&amp;#0160;&amp;#0160;&lt;/font&gt;&lt;font color='#A31515'&gt;"System.Threading.Thread.Resume()"&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;from&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;in&lt;/font&gt;&amp;#0160;&lt;b style="color:#000064;background-color:#E8E8FF"&gt;Application&lt;/b&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Methods&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;UsingAny&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;wrongMethods&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color='#0000FF'&gt;select&lt;/font&gt;&amp;#0160;&lt;font color='#0000FF'&gt;new&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;{&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;,&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;calls&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;=&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;m&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;MethodsCalled&lt;/font&gt;&lt;font color='#000000'&gt;.&lt;/font&gt;&lt;font color='#000000'&gt;Intersect&lt;/font&gt;&lt;font color='#000000'&gt;(&lt;/font&gt;&lt;font color='#000000'&gt;wrongMethods&lt;/font&gt;&lt;font color='#000000'&gt;)&lt;/font&gt;&amp;#0160;&lt;font color='#000000'&gt;}&lt;/font&gt;&lt;font color='#000000'&gt;&lt;br/&gt;&lt;br/&gt;&lt;/font&gt;</QueryHtml>
+        <Columns>
+          <Column>method</Column>
+          <Column>calls</Column>
+        </Columns>
+        <Rows>
+          <Row Name="TestHang()" FullName="MSBuildProjectTest.MSBuildTest.TestHang()">
+            <Val>1 method</Val>
+          </Row>
+          <Row Name="Sum:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+          <Row Name="Average:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+          <Row Name="Minimum:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+          <Row Name="Maximum:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+          <Row Name="Standard deviation:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+          <Row Name="Variance:" FullName="Stat">
+            <Val>0</Val>
+          </Row>
+        </Rows>
+      </Query>
+    </Group>
+    <Group Name="System.Xml" FullName=".NET Framework Usage \ System.Xml" GroupId="GroupOfRules1660991502" NbQueries="2" NbErrors="0" NbWarns="0" Status="Ok" />
+    <Group Name="System.Globalization" FullName=".NET Framework Usage \ System.Globalization" GroupId="GroupOfRules-1645675342" NbQueries="1" NbErrors="0" NbWarns="0" Status="Ok" />
+    <Group Name="Microsoft.Contracts" FullName=".NET Framework Usage \ Microsoft.Contracts" GroupId="GroupOfRules17988531" NbQueries="1" NbErrors="0" NbWarns="0" Status="Ok" />
+  </Group>
+  <Group Name="Defining JustMyCode" FullName="Defining JustMyCode" GroupId="GroupOfRules-1894704231" NbQueries="4" NbErrors="0" NbWarns="0" Status="Ok" />
+  <Group Name="Rules extracted from Source Code" FullName="Rules extracted from Source Code" GroupId="GroupOfRules1206142379" NbQueries="0" NbErrors="0" NbWarns="0" Status="Not yet compiled" />
+</RuleResult>
