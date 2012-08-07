@@ -15,16 +15,16 @@ namespace WindowsFormsApplicationRemote
         }
 
         [Test]
-        public void TestException()
-        {
-            throw new Exception("Test Exception");
-        }
+        //public void TestException()
+        //{
+        //    throw new Exception("Test Exception");
+        //}
 
         [Test]
-        public void TestAssert()
-        {
-            Assert.Fail("Test Assert");
-        }
+        //public void TestAssert()
+        //{
+        //    Assert.Fail("Test Assert");
+        //}
 
         [Test]
         public void TestHang()
