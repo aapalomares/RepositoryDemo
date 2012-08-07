@@ -111,7 +111,7 @@
     <Message Text="  - FxCopTest" />
     <Message Text="  - SimianTest" />
     <Message Text="  - NDependTest" />
-    <Message Text="  - NCover" />
+    <Message Text="  - NCoverTest" />
   </Target>
 
   <!-- BuildAll Task. -->
@@ -123,8 +123,8 @@
     <CallTarget Targets="StyleCopTest" />
     <CallTarget Targets="FxCopTest" />
     <CallTarget Targets="SimianTest" />
-    <CallTarget Targets="NDependTest" />
-    <CallTarget Targets="NCover" />	
+    <!--<CallTarget Targets="NDependTest" />
+    <CallTarget Targets="NCoverTest" />	-->
   </Target>
   
   <!-- CoreBuild Task. -->
