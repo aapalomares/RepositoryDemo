@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NUnit.Framework;
-using System.Threading;
 using System.Diagnostics;
+using System.Threading;
+using NUnit.Framework;
 
 namespace WindowsFormsApplicationRemote
 {
@@ -17,17 +14,17 @@ namespace WindowsFormsApplicationRemote
             Trace.TraceInformation("Test trace.");
         }
 
-        //[Test]
-        //public void TestException()
-        //{
-        //    throw new Exception("Test Exception");
-        //}
+        [Test]
+        public void TestException()
+        {
+            throw new Exception("Test Exception");
+        }
 
-        //[Test]
-        //public void TestAssert()
-        //{
-        //    Assert.Fail("Test Assert");
-        //}
+        [Test]
+        public void TestAssert()
+        {
+            Assert.Fail("Test Assert");
+        }
 
         [Test]
         public void TestHang()
@@ -35,5 +32,16 @@ namespace WindowsFormsApplicationRemote
             Thread.Sleep(10000);
         }
 
+
+        [Test]
+        public void TestCompare()
+        {
+            string valueOne, valueTwo;
+
+            valueOne = "One";
+            valueTwo = "One";
+
+            Assert.AreEqual(valueOne, valueTwo);
+        }
     }
 }

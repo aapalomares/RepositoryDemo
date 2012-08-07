@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplicationRemote", "WindowsFormsApplicationRemote\WindowsFormsApplicationRemote.csproj", "{BDF6EC2C-D59D-4B97-832E-0D13972B523C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormaApplicationTest", "WindowsFormaApplicationTest\WindowsFormaApplicationTest.csproj", "{697BC951-B221-4EB7-8D83-35DA462785A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplicationRemoteTests", "WindowsFormaApplicationTest\WindowsFormsApplicationRemoteTests.csproj", "{697BC951-B221-4EB7-8D83-35DA462785A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +40,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NDepend) = preSolution
-		Project = "..\..\..\..\Users\anpl\AppData\Local\Temp\NDependTemporaryProject\NDependProject.ndproj"
+		Project = ""
 	EndGlobalSection
 EndGlobal
