@@ -13,8 +13,13 @@ namespace WindowsFormsApplicationRemote
         [STAThread]
         static void Main()
         {
+            // TODO. ToDo Uno.
             Application.EnableVisualStyles();
+
+            // TODO. ToDo Dos.
             Application.SetCompatibleTextRenderingDefault(false);
+
+            // TODO. ToDo Tres.
             Application.Run(new Form1());
         }
     }

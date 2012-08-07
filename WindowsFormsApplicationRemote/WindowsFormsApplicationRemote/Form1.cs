@@ -11,6 +11,7 @@ namespace WindowsFormsApplicationRemote
 {
     public partial class Form1 : Form
     {
+        // FIXME. I can't work!!!
         public Form1()
         {
             InitializeComponent();
@@ -18,6 +19,7 @@ namespace WindowsFormsApplicationRemote
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // TODO. ToDo Cuatro.
             string a = null;
             a = null;
         }
