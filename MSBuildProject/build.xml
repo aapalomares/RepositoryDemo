@@ -85,14 +85,14 @@
 			- CleanAll.
 			- CleanBin.
 			- CleanAndBuild.
-      - Help.
+			- Help.
 			- NUnitTest.
 			- StyleCopTest.
 			- StyleCopEditSetting.
 			- FxCopTest.
 			- SimianTest.
 			- NDependTest.
-      - NCover.
+			- NCover.
         =======================================  -->
 
   <!-- BuildAll Task. -->
@@ -124,6 +124,7 @@
     <CallTarget Targets="FxCopTest" />
     <CallTarget Targets="SimianTest" />
     <CallTarget Targets="NDependTest" />
+    <CallTarget Targets="NCover" />	
   </Target>
   
   <!-- CoreBuild Task. -->
