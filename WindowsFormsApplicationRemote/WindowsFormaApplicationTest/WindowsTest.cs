@@ -14,13 +14,13 @@ namespace WindowsFormsApplicationRemote
             Trace.TraceInformation("Test trace.");
         }
 
-        [Test]
+        //[Test]
         //public void TestException()
         //{
         //    throw new Exception("Test Exception");
         //}
 
-        [Test]
+        //[Test]
         //public void TestAssert()
         //{
         //    Assert.Fail("Test Assert");
