@@ -5,20 +5,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildProjectWeb", "MSBuil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildProjectClass", "MSBuildProjectClass\MSBuildProjectClass.csproj", "{545BA9BF-828C-4814-ACB1-EA644B0466D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F3CBAAD5-ADD9-49F5-9E5F-C8EFE8766053}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildProjectTest", "MSBuildProjectTest\MSBuildProjectTest.csproj", "{892A4EC2-38CB-45DB-8DE9-EB64C099CEB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CEC68FC-527E-4E69-96B9-04E2176B9FF8}"
 	ProjectSection(SolutionItems) = preProject
 		build.xml = build.xml
-		MSBuildProject.vsmdi = MSBuildProject.vsmdi
 		Project.FxCop = Project.FxCop
+		Project.ndproj = Project.ndproj
 		Settings.StyleCop = Settings.StyleCop
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSBuildProjectTest", "MSBuildProjectTest\MSBuildProjectTest.csproj", "{892A4EC2-38CB-45DB-8DE9-EB64C099CEB9}"
-EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = MSBuildProject.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

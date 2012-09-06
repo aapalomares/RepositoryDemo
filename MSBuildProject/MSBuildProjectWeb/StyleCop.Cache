@@ -3,25 +3,10 @@
   <project key="1394315129">
     <configuration>DEBUG;TRACE</configuration>
   </project>
-  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>667</milliseconds>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
   <sourcecode name="Global.asax.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>727</milliseconds>
@@ -183,19 +168,25 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="About.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>686</milliseconds>
-    <violations />
+    <milliseconds>667</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
   </sourcecode>
   <sourcecode name="About.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>676</milliseconds>
@@ -257,19 +248,19 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="ChangePassword.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="About.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>575</milliseconds>
+    <milliseconds>686</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="ChangePassword.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>564</milliseconds>
@@ -331,19 +322,19 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="ChangePasswordSuccess.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="ChangePassword.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>595</milliseconds>
+    <milliseconds>575</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="ChangePasswordSuccess.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>585</milliseconds>
@@ -405,19 +396,19 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="Login.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="ChangePasswordSuccess.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>636</milliseconds>
+    <milliseconds>595</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="Login.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>623</milliseconds>
@@ -474,10 +465,19 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="Login.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
+    </settings>
+    <timestamp>07/17/2012 13:27:19</timestamp>
+    <milliseconds>636</milliseconds>
+    <violations />
+  </sourcecode>
   <sourcecode name="Register.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>647</milliseconds>
@@ -576,26 +576,17 @@
   </sourcecode>
   <sourcecode name="Register.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>658</milliseconds>
     <violations />
   </sourcecode>
-  <sourcecode name="Default.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>711</milliseconds>
-    <violations />
-  </sourcecode>
   <sourcecode name="Default.aspx.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:36:32</timestamp>
     <milliseconds>126</milliseconds>
@@ -657,19 +648,19 @@
       </violation>
     </violations>
   </sourcecode>
-  <sourcecode name="Site.Master.designer.cs" parser="StyleCop.CSharp.CsParser">
+  <sourcecode name="Default.aspx.designer.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
-    <milliseconds>750</milliseconds>
+    <milliseconds>711</milliseconds>
     <violations />
   </sourcecode>
   <sourcecode name="Site.Master.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
     <timestamp>07/17/2012 13:27:19</timestamp>
     <milliseconds>736</milliseconds>
@@ -731,4 +722,16 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="Site.Master.designer.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
+    </settings>
+    <timestamp>07/17/2012 13:27:19</timestamp>
+    <milliseconds>750</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="1537064082">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>

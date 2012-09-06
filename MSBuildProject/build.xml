@@ -57,8 +57,15 @@
 
     <!-- NCover Configuration -->
     <NCoverRoot>C:\Program Files\NCover\</NCoverRoot>
+    <NCoverDirectory>C:\Desarrollo\MSBuildProject\MSBuildProjectClass\bin\Debug</NCoverDirectory>
     <NCoverOutputFile>$(ProjectRoot)\$(DirectoryResult)\ncover-results.xml</NCoverOutputFile>
-
+    <CoverageReports>
+      <Report>
+        <ReportType>FullCoverageReport</ReportType>
+        <Format>Html</Format>
+        <OutputPath>CoverageReport\</OutputPath>
+      </Report>
+    </CoverageReports>
   </PropertyGroup>
 
   <!-- Import StyleCop Assembly. -->
@@ -284,9 +291,14 @@
     <NCover 
       ToolPath="$(NCoverRoot)"
       TestRunnerExe="$(NUnitRoot)\nunit-console.exe"
-      TestRunnerArgs="C:\Desarrollo\MSBuildProject\MSBuildProjectClass\bin\Debug\MSBuildProjectClass.dll"
+      TestRunnerArgs="$(NCoverDirectory)\MSBuildProjectClass.dll"
       CoverageFile="$(NCoverOutputFile)"/>
 
+    <NCoverReporting
+      ToolPath="$(NCoverRoot)"
+      CoverageDataPaths="$(NCoverOutputFile)"
+      OutputReport="$(CoverageReports)"/>
+    
     <Message Text="*** NCoverTest end." />
   </Target>
   

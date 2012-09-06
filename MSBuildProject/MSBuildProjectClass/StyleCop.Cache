@@ -3,28 +3,13 @@
   <project key="-1087445558">
     <configuration>DEBUG;TRACE</configuration>
   </project>
-  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
-    <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
-    </settings>
-    <timestamp>07/17/2012 13:34:42</timestamp>
-    <milliseconds>432</milliseconds>
-    <violations>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
-        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
-        <line>1</line>
-        <warning>False</warning>
-      </violation>
-    </violations>
-  </sourcecode>
   <sourcecode name="Class1.cs" parser="StyleCop.CSharp.CsParser">
     <settings>
-      <timestamp>03/21/2012 12:05:02</timestamp>
-      <milliseconds>0</milliseconds>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
     </settings>
-    <timestamp>07/17/2012 13:35:34</timestamp>
-    <milliseconds>541</milliseconds>
+    <timestamp>07/18/2012 11:55:01</timestamp>
+    <milliseconds>963</milliseconds>
     <violations>
       <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
         <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
@@ -66,13 +51,13 @@
         <line>10</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
-        <context>The field must have a documentation header.</context>
-        <line>11</line>
+      <violation namespace="StyleCop.CSharp.OrderingRules" rule="ConstantsMustAppearBeforeFields" ruleCheckId="SA1203">
+        <context>All constants must be placed before all non-constants.</context>
+        <line>10</line>
         <warning>False</warning>
       </violation>
-      <violation namespace="StyleCop.CSharp.NamingRules" rule="FieldNamesMustBeginWithLowerCaseLetter" ruleCheckId="SA1306">
-        <context>Variable names and private field names must start with a lower-case letter: ABC.</context>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
         <line>11</line>
         <warning>False</warning>
       </violation>
@@ -88,4 +73,22 @@
       </violation>
     </violations>
   </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>07/18/2012 11:41:10</timestamp>
+      <milliseconds>427</milliseconds>
+    </settings>
+    <timestamp>07/17/2012 13:34:42</timestamp>
+    <milliseconds>432</milliseconds>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+  <project key="1657890082">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
 </stylecopresultscache>
